@@ -7,7 +7,7 @@ import DocumentationTabs from "@/components/DocumentationTabs"
 
 import "simplebar-react/dist/simplebar.min.css"
 
-export const metadat: Metadata = {
+export const metadata: Metadata = {
   title: "Similarity API | Documentation",
   description: "Free & Open Source text similarity API",
 }

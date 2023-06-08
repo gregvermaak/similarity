@@ -1,13 +1,13 @@
-// import { authOptions } from '@/lib/auth'
 import { getServerSession } from "next-auth"
 import Link from "next/link"
 import { ThemeToggle } from "@/components/ThemeToggle"
 import { buttonVariants } from "@/ui/Button"
 import SignInButton from "@/ui/SignInButton"
 import SignOutButton from "@/ui/SignOutButton"
+import { authOptions } from "@/lib/auth"
 
 const Navbar = async () => {
-  const session = await getServerSession()
+  const session = await getServerSession(authOptions)
 
   return (
     <div className="fixed left-0 right-0 top-0 z-50 flex h-20 items-center justify-between border-b border-slate-300 bg-white/75 shadow-sm backdrop-blur-sm dark:border-slate-700 dark:bg-slate-900/75">
